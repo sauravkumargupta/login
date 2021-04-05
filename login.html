@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		*
+		{
+			margin: 0 auto;
+			padding: 0 auto;
+		}
+
+		body
+		{
+			/*background-color: rgba(90,120,155,0.4);*/
+			background-image: url(b2.jpg);
+			background-size: cover;
+			width: 100vh;
+			height: 70vh;
+		}
+
+		h1
+		{
+			color: black;
+			font-size: 35px;
+			word-spacing: 10px;
+			padding: 10px;
+			font-style: italic;
+			text-shadow: 2px 2px 5px black;
+		}
+
+		.f
+		{
+			margin-top: 200px;
+			text-align: center;
+			width: 400px;
+			height: 240px;
+			border:1px grey solid;
+			box-shadow: 5px 5px 9px black;
+			/*background-color: #1ecbe1;*/
+		}
+
+		.f:hover
+		{
+			box-shadow: 5px 5px 9px white;
+		}
+
+		.login
+		{
+			width: 155px;
+			background-color: lightgray;
+			border-radius: 10px;
+			transition: all 3s;
+		}
+		.login:hover
+		{
+			color: white;
+			background-color: blue;
+			transform: scale(1.1);
+		}
+		.forget a
+		{
+			color: black;
+		}
+		.forget a:hover
+		{
+			color: blue;
+		}
+
+		::placeholder
+		{
+			color: #f50a0b;
+		}
+
+		label input
+		{
+			background-color: lightgray;
+			box-shadow: 2px 2px 5px white;
+			border-radius: 10px;
+			transition: all;
+		}
+
+		label input:hover
+		{
+			background-color: white;
+			box-shadow: 2px 2px 5px black;
+			transform: scale(1.1);
+		}
+
+
+
+	</style>
+
+
+</head>
+<body>
+	<form class="f">
+
+<h1>Login Form</h1>
+<br>
+<label>
+	<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+	<input type="text" name="name"  placeholder="Email or Mobile*" required=""> 
+</label>
+
+<br><br>
+<label>
+	<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+	<input type="Password" name="password" placeholder="Password*" required=""> 
+</label>
+<br><br>
+&nbsp;&nbsp; <button class="login" type="submit">Login</button>
+
+<br><br>
+<div class="forget">
+<a href="">Forget Password?</a>
+&nbsp;
+<a href="signup.html">Create New Account</a>
+</div>
+</form>
+</body>
+</html>
